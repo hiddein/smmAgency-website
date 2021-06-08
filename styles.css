@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+html,body {
+    height: 100%;
+    font-family: "Balsamiq Sans";
+}
+.wrapper {
+overflow: hidden;
+min-height: 100%;
+}
+.back_img{
+    background-image: url(img/backimg.svg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.main-screen{
+    flex: 1 0 100%;
+    position: relative;
+
+}
+.main-screen__content{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    max-width: 800px;
+
+
+
+}
+.main-screen__conteiner{
+    position: relative;
+    z-index: 2;
+}
+.main__text_t{
+    font-size: 65px;
+    color:rgb(13, 22, 63);
+    opacity: 0;
+}
+
+@media (max-width:830px){
+    .main__text_t{
+        font-size: 55px;
+        color:rgb(13, 22, 63);
+    }
+    .main-screen__content{
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        padding-right: 20px;
+  
+    }
+}
+@media (max-width:660px){
+    .main__text_t{
+        font-size: 50px;
+        color:rgb(13, 22, 63);
+    }
+    .main-screen__content{
+        position: absolute;
+        top: 20%;
+  
+    }
+}
+
+@media (max-height:660px){
+    .main-screen__content{
+
+        top: 30%;
+
+    }
+    .main__text_t{
+        font-size: 50px;
+
+    }
+}
+@media (max-height:600px){
+    .main-screen__content{
+
+        top: 25%;
+
+    }
+    
+}
+@media (max-height:500px) {
+    .main-screen__content{
+
+        top: 20%;
+
+    }
+
+    .back_img{
+
+        height: 500px;
+
+    }
+
+}
+@media (max-height:660px) and (max-width:500px){
+    .main-screen__content{
+
+        top: 22%;
+
+    }
+    .main__text_t{
+        font-size: 45px;
+
+    }
+}
+@media (max-height:630px) and (max-width:500px){
+    .main-screen__content{
+
+        top: 20%;
+
+    }
+    .main__text_t{
+        font-size: 40px;
+
+    }
+}
+@media (max-height:500px) and (max-width:500px) {
+    .main-screen__content{
+
+        top: 15%;
+
+    }
+
+    .back_img{
+
+        height: 500px;
+
+    }
+
+}
